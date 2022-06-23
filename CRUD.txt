@@ -1,0 +1,17 @@
+<?php
+class User extends CI_model{
+    private $f = '';		// filter
+	private $o = '';		// order
+
+	private $q = Null;		// query
+	private $rs = Null;		// record set
+	private $r = Null;		// current record
+	private $c = 0;			// record count
+    public function __construct()
+    {
+        $this->load->database();
+    }
+}
+
+
+
