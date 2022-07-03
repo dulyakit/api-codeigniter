@@ -34,8 +34,8 @@
                 <div class="card-body text-dark">
                     <div id="alertuser"></div>
                     <form name="login" method="post" onsubmit="return validateForm()" action="<?php echo base_url() . 'login/check_login' ?>">
-                        <div class="col-md-12 form-group">
-                            <label for="">Email</label>
+                        <div class="col-md-12 form-group" align="left">
+                            <label for="" >Email</label>
                             <input type="text" class="form-control" name="email" placeholder="example@test.com">
 
                             <label class="mt-4" for="">password</label>
