@@ -16,10 +16,10 @@ class Employee extends CI_model
     public function employee_list()
     {
         $query = $this->db->get('employee');
-        // $q = $this->db->query($sql);
         $result = $query->result();
         return $result;
     }
+    
     public function delEm($ssn = "")
     {
         $this->db->where('ssn', $ssn);
@@ -37,6 +37,13 @@ class Employee extends CI_model
         $result = $this->q->result();
         return $result;
         // return $this->q;
+    }
+
+    public function edit_employee($id, $data)
+    {
+        $this->db->where('ssn', $id);
+        $this->db->update('employee', $data);
+        return true;
     }
 
     public function edit_user($data)

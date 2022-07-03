@@ -12,6 +12,14 @@ class User extends CI_model
     {
         $this->load->database();
     }
+
+    public function getUserList()
+    {
+        $query = $this->db->get('user');
+        $result = $query->result();
+        return $result;
+    }
+
     public function check_register($user_data)
     {
         $this->db->where('email', $user_data['email']);

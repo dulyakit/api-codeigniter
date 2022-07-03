@@ -35,7 +35,6 @@ if (count($_SESSION) > 1) {
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
     <link href="<?php echo base_url() . 'theme/startbootstrap-agency-gh-pages/css'; ?>/styles.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
 </head>
